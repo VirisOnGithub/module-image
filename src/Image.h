@@ -19,4 +19,6 @@ class Image {
   void dessinerRectangle(int Xmin, int Ymin, int Xmax, int Ymax, Pixel couleur);
 
   void effacer(Pixel couleur);
+
+  static void testRegression();
 };
