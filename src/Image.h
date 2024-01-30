@@ -7,6 +7,7 @@ class Image {
   int dimx, dimy;
 
  public:
-  Image() : tab(nullptr), dimx(0), dimy(0){};
-  ~Image();
+  Image();
+  Image(int dimensionX, int dimensionY);
+  ~Image(){};
 };
