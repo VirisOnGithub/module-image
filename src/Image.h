@@ -14,4 +14,8 @@ class Image {
   Pixel getPix(int x, int y) const;
 
   void setPix(int x, int y, Pixel couleur);
+
+  void dessinerRectangle(int Xmin, int Ymin, int Xmax, int Ymax, Pixel couleur);
+
+  void effacer(Pixel couleur);
 };
