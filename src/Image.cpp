@@ -10,7 +10,19 @@ Image::Image(int dimensionX, int dimensionY)
 Image::~Image() {}
 
 Pixel Image::getPix(int x, int y) const {
-  return tab[x + dimx * y];
+    if(x < 0 || x >= dimx || y < 0 || y >= dimy){
+        return Pixel(0,0,0);
+    }
+
+    return tab[x+ dimx*y];
+}
+
+Pixel Image::getPix(int x, int y) {
+    if(x < 0 || x >= dimx || y < 0 || y >= dimy){
+        return Pixel(0,0,0);
+    }
+
+    return tab[x+ dimx*y];
 }
 
 void Image::setPix(int x, int y, Pixel couleur) {
